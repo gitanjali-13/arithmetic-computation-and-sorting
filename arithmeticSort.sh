@@ -27,3 +27,5 @@ done
 echo ${array[@]}
 decending=`printf "%s" ${array[@]} | sort -nr`
 echo $decending
+ascending=`printf "%s" ${array[@]} | sort -n`
+echo $ascending
