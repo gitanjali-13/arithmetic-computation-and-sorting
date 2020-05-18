@@ -18,3 +18,10 @@ echo "Result of first computation: " ${result[a+b*c]}
 echo "Result of second computation: " ${result[a*b+c]}
 echo "Result of third computation : " ${result[c+a/b]}
 echo "Result of forth computation: " ${result[a%b+c]}
+
+counter=0
+for i in ${!result[@]}
+do
+	array[counter++]=${result[$i]}
+done
+echo ${array[@]}
