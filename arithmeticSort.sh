@@ -6,3 +6,5 @@ read -p "Third Input: :" c
 
 d=$(($a+$b*$c))
 e=$(($a*$b+$c))
+f=$(($c+$a/$b))
+
